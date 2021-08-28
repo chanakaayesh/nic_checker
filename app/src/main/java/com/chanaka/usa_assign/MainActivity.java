@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         else if(nic.matches("^[0-9]{9}[vVxX]$")){
 
             String year=nic.substring(0,2);
+            year="19"+year;
             String days=nic.substring(2,5);
 
             int[] months={31,29,31,30,31,30,31,31,30,31,30,31};
@@ -63,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
             sumbitbttn.setVisibility(View.INVISIBLE);
             nic_input.setVisibility(View.INVISIBLE);
             popup.setVisibility(View.VISIBLE);
-            details.setText("Year  " +"\t\t:"+(year)+"\nMonth  "+"\t\t:"+(i+1)+"\nDay  "+"\t\t:"+day+"\nGender  "+"\t:"+Gender);
+            details.setText("\nYear  \t:"+year+"\nMonth \t:"+(i+1)+"\nDay   \t:"+day+"\nGender\t:"+Gender);
             System.out.println("Year : "+(year)+"\nMonth : "+(i+1)+"\nDay : "+day+"\nGender : "+Gender+"Details of your NIC");
             System.out.println("Year : "+(year)+"\nMonth : "+(i+1)+"\nDay : "+day+"\nGender : "+Gender+"Details of your NIC");
 
         }
-        else if(nic.matches("^[0-9]$") && nic.length()==12){
+        else if(nic.matches("[0-9]+") && nic.length()==12){
 
             String year=nic.substring(0,4);
             String days=nic.substring(4,7);
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             sumbitbttn.setVisibility(View.INVISIBLE);
             nic_input.setVisibility(View.INVISIBLE);
             popup.setVisibility(View.VISIBLE);
-            details.setText("Year  " +"\t\t:"+(year)+"\nMonth  "+"\t\t:"+(i+1)+"\nDay  "+"\t\t:"+day+"\nGender  "+"\t:"+Gender);
+            details.setText("Year  "+"\t:"+(year)+"\nMonth "+"\t:"+(i+1)+"\nDay   "+"\t\t:"+day+"\nGender"+"\t:"+Gender);
             System.out.println("Year : "+(year)+"\nMonth : "+(i+1)+"\nDay : "+day+"\nGender : "+Gender+"Details of your NIC");
 
         }

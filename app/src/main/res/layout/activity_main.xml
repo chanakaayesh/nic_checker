@@ -81,6 +81,7 @@
                     tools:ignore="RtlCompat" />
 
                 <TextView
+                    android:typeface="monospace"
                     android:layout_marginRight="@dimen/mlr"
                     android:layout_marginLeft="@dimen/mlr"
                     android:textColor="@color/white"
