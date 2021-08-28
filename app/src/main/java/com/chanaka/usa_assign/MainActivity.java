@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             sumbitbttn.setVisibility(View.INVISIBLE);
             nic_input.setVisibility(View.INVISIBLE);
             popup.setVisibility(View.VISIBLE);
+
             details.setText("\nYear  \t:"+year+"\nMonth \t:"+(i+1)+"\nDay   \t:"+day+"\nGender\t:"+Gender);
             System.out.println("Year : "+(year)+"\nMonth : "+(i+1)+"\nDay : "+day+"\nGender : "+Gender+"Details of your NIC");
             System.out.println("Year : "+(year)+"\nMonth : "+(i+1)+"\nDay : "+day+"\nGender : "+Gender+"Details of your NIC");
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             sumbitbttn.setVisibility(View.INVISIBLE);
             nic_input.setVisibility(View.INVISIBLE);
             popup.setVisibility(View.VISIBLE);
-            details.setText("Year  "+"\t:"+(year)+"\nMonth "+"\t:"+(i+1)+"\nDay   "+"\t\t:"+day+"\nGender"+"\t:"+Gender);
+            details.setText("\nYear  \t:"+year+"\nMonth \t:"+(i+1)+"\nDay   \t:"+day+"\nGender\t:"+Gender);
             System.out.println("Year : "+(year)+"\nMonth : "+(i+1)+"\nDay : "+day+"\nGender : "+Gender+"Details of your NIC");
 
         }
