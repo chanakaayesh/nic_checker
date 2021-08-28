@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_marginRight="@dimen/maincontain_mrl"
+        android:layout_marginLeft="@dimen/maincontain_mrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/f1"
+        android:background="@drawable/background2"
+        >
+
+        <EditText
+            android:hint="Enter NIC"
+
+            android:layout_marginRight="@dimen/mlr"
+            android:layout_marginLeft="@dimen/mlr"
+
+            android:id="@+id/nic"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="8%"
+            android:background="@drawable/editbackground"
+            android:backgroundTint="@null"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nic"
+            android:id="@+id/s1"
+            app:layout_heightPercent="2%"/>
+        <Button
+            android:layout_marginRight="@dimen/mlr"
+            android:layout_marginLeft="@dimen/mlr"
+            android:id="@+id/submitbtn"
+            android:layout_below="@id/s1"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            app:layout_heightPercent="8%"
+            android:textStyle="bold"
+            android:onClick="sumbit"
+            />
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:background="@drawable/popupbackgroud"
+            android:id="@+id/popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="50%">
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@drawable/textbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="10%"
+                    android:text="Your details"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    android:gravity="center_vertical"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/mlr"
+                    android:layout_marginLeft="@dimen/mlr"
+                    android:textColor="@color/white"
+                    android:id="@+id/details"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="10%"
+                    app:layout_widthPercent="15%"
+                    android:text="OK"
+                    android:onClick="closepopup"
+                    android:background="@drawable/button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"/>
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
